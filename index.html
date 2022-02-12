@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- icone da página -->
+    <link rel="shortcut icon" href="img/foto-everton.jpeg" type="image/x-icon" />
+    
+    <!-- Importação da folha de estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome; Importação da fonte de caracteres especiais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Righteous -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Waterfall&display=swap" rel="stylesheet">
+
+    <!-- Fonte Comfortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter&family=Comforter+Brush&family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Mochiy Pop P One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Righteous&family=Waterfall&display=swap" rel="stylesheet">
+
+    <title>Everton Martins</title>
+</head>
+<body>
+    <script src="script_animacoes.js" defer></script>
+    <div class="backToTop-bnt" id="bntBackToTop" onclick="backToTop()">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+    <!-- Cabeçalho -->
+    <header class="cabecalho" id="inicio">
+        <h1 class="cabecalho-titulo">Everton Martins</h1>
+        <nav class="cabecalho-menu" id="menu">
+            <div class="menu-hamburguer" onclick="menu()" id="menu-hamburguer">
+                <span class="menu-hamburguer-linha"></span>
+            </div>
+            <ul class="cabecalho-menu-lista">
+                <li class="cabecalho-menu-lista-li">
+                    <a class="cabecalho-menu-item" href="#inicio"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+                </li>
+                <li class="cabecalho-menu-lista-li">
+                    <a class="cabecalho-menu-item" href="#projetos">Projetos</a>
+                </li>
+                <li class="cabecalho-menu-lista-li">
+                    <a class="cabecalho-menu-item" href="#certificados">Certificados</a>
+                </li>
+                <li class="cabecalho-menu-lista-li">
+                    <a class="cabecalho-menu-item" href="#contato">Contato</a>
+                </li>
+                <li>
+                    <div onclick="modo_dark()" id="button-dark-mode">
+                        <div class="bloco-button">
+                            <i id='icon-dark-mode' class="fas fa-sun"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Assunto principal da página -->
+    <main class="conteudo" onload="aparecer()">
+        <figure class="conteudo-figura" id="figure">
+            <img class="conteudo-figura-imagem" src="img/foto-everton.jpeg">
+            <figcaption class="conteudo-figura-texto">Everton Martins</figcaption>
+            <div class="conteudo-figura-animacao">
+                <h3>Estudante de Programação</h3>
+            </div>
+        </figure>
+    </main>
+    <section class="informacoes">
+        <div class="informacoes-img">
+            <img src="img/minha_foto.png" alt="">
+        </div>
+        <div class="informacoes-descricao">
+            <h3>Olá, eu sou <strong>Everton Martins</strong></h3>
+            <p>
+                Sou estudante de programação e tenho como objetivo torna-me um Dev FullStack,
+                sempre busco dar o melhor de mim no que faço e aprimorar meus conhecimentos a cada desafio, 
+                não gosto de ficar em estado de inércia e por isso busco sempre adicionar conhecimentos.
+            </p>
+            <blockquote cite="https://www.rsdata.com.br/nenhum-homem-pode-banhar-se/#:~:text=Compartilhar%20no%20linkedin-,Nenhum%20homem%20pode%20banhar%2Dse%20duas%20vezes%20no%20mesmo%20rio,Her%C3%A1clito%20de%20%C3%89feso." >
+                "Nenhum homem pode banhar-se duas vezes no mesmo rio… pois na segunda vez o rio já não é o mesmo, nem tão pouco o homem!… Heráclito de Éfeso."
+            </blockquote>
+            <table class="informacoes-descricao-tabela">
+                <tr>
+                    <th class="informacoes-descricao-tabela-titulo">Nome</th>
+                    <td class="informacoes-descricao-tabela-conteudo">: Everton Martins</td>
+                </tr>
+                <tr>
+                    <th class="informacoes-descricao-tabela-titulo">Idade</th>
+                    <td class="informacoes-descricao-tabela-conteudo" id="idade"></td>
+                </tr>
+                <tr>
+                    <th class="informacoes-descricao-tabela-titulo">Endereço</th>
+                    <td class="informacoes-descricao-tabela-conteudo">: Distrito Federal, Brasil</td>
+                </tr>
+                <tr>
+                    <th class="informacoes-descricao-tabela-titulo">Telefone</th>
+                    <td class="informacoes-descricao-tabela-conteudo">: (61) 99590-0630</td>
+                </tr>
+                <tr>
+                    <th class="informacoes-descricao-tabela-titulo">Email</th>
+                    <td class="informacoes-descricao-tabela-conteudo">: evertonmartins707@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="informacoes-descricao-tabela-conteudo" colspan="2">
+                        <a href="arquivos/Curriculo - Everton Martins dos Santos.pdf" target="_blank">
+                            <div class="informacoes-descricao-tabela-curriculo">Baixar CV</div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- Objetos complementares -->
+    <section class="projetos" id="projetos">
+        <h2 class="projetos-titulo">Meus projetos</h2>
+        <div class="projetos-front-end">
+            <h2>Front End</h2>
+            <!-- Outros sites criados -->
+            <div class="card">
+                <div class="card-bloco">
+                    <div class="card-bloco-display">
+                        <img class="card-bloco-display-img" src="img/foto-projeto-galleria.png" alt="site 'Projeto Galleria'">
+                        <p class="card-bloco-display-titulo">Projeto Galleria</p>
+                    </div>
+                    <div class="card-bloco-detalhes">
+                        <h5 class="detalhes-btn"><a>Saiba mais</a></h5>
+                        <h5 class="detalhes-btn"><a href="https://projeto-galleria.netlify.app/" target="_blank">Acessar site</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-bloco">
+                    <div class="card-bloco-display">
+                        <img class="card-bloco-display-img" src="img/foto-trabalho-de-biologia.png" alt="site 'Projeto Galleria'">
+                        <p class="card-bloco-display-titulo">Josefina</p>
+                    </div>
+                    <div class="card-bloco-detalhes">
+                        <h5 class="detalhes-btn"><a>Saiba mais</a></h5>
+                        <h5 class="detalhes-btn"><a href="https://josefina.netlify.app/" target="_blank">Acessar site</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card desabilitado">
+                <div class="card-bloco">
+                    <div class="card-bloco-display">
+                        <img class="card-bloco-display-img" src="img/foto-ministerio-de-artes.png" alt="site 'Projeto Galleria'">
+                        <p class="card-bloco-display-titulo">Em breve</p>
+                    </div>
+                    <div class="card-bloco-detalhes">
+                        <h5 class="detalhes-btn"><a>Saiba mais</a></h5>
+                        <h5 class="detalhes-btn"><a href="https://ministerio-de-artes-santo-antonio.netlify.app/" target="_blank">Acessar site</a></h5>
+                    </div>
+                </div>
+                <div class="desa"></div>
+            </div>
+        </div>
+        <div class="projetos-back-end">
+            <h2>Back End</h2>
+            <p>Nada por aqui... :(</p>
+        </div>
+    </section>
+    <section class="meus-certificados" id="certificados">
+        <h2>Certificados</h2>
+        <!-- Certificados -->
+        <div class="card">
+            <div class="card-bloco">
+                <a class="card-bloco-display" href="arquivos/Python academy.pdf" target="_blank">
+                    <img class="card-bloco-display-img" src="img/foto-certificado-python-academy.png" alt="certificado 'python academy'">
+                    <p class="card-bloco-display-titulo">Python Academy</p>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-bloco">
+                <a class="card-bloco-display" href="arquivos/EVERTON MARTINS DOS SANTOS.pdf" target="_blank">
+                    <img class="card-bloco-display-img" src="img/foto-certificado-workshop-ingressando-na-vida-profissional.png" alt="site 'Projeto Galleria'">
+                    <p class="card-bloco-display-titulo">Workshop - ENNET</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="enviar.py"></script> -->
+    <section class="contato">
+        <h2 id="contato">Contato</h2>
+        <form action="index.html" method="post" accept-charset="charset" enctype="text/plain">
+            <label for="nome">Nome completo: </label>
+            <input type="text" name="nome" id="" placeholder="Nome completo:" required>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="" placeholder="Email:" required>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <p class="rodape-conteudo">Everton Martins &COPY; 2021/12/10</p>
+        <div class="rodape-social-media">
+            <ul class="social-media-lista">
+                <li class="social-media-lista-item">
+                    <a class="social-media-lista-item-link" href="https://www.facebook.com/Everton.Martins.Sants/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li><li class="social-media-lista-item">
+                    <a class="social-media-lista-item-link" href="https://www.instagram.com/martins_sants/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li><li class="social-media-lista-item">
+                    <a class="social-media-lista-item-link" href="https://api.whatsapp.com/send?phone=5561995900630&text=Hey%2C%20vi%20seu%20site%2C%20podemos%20conversar%3F" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li><li class="social-media-lista-item">
+                    <a class="social-media-lista-item-link" href="https://github.com/3532Everton" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li><li class="social-media-lista-item">
+                    <a class="social-media-lista-item-link" href="https://www.linkedin.com/in/everton-martins-21160721a" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
