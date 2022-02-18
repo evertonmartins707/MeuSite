@@ -314,7 +314,8 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     place-items: center;
-    height: 13em;
+    border-top: 1px solid #3a3939;
+    height: 15em;
     width: 100%;
     color: #fff;
     background-color: rgb(44, 40, 40, .9);
@@ -344,8 +345,9 @@ h2 {
 }
 .social-media-lista-item-link{
     color: #fff;
-    height: 80%;
-    width: 80%;
+    height: calc(13em/4);
+    width: calc(13em/4);
+    
     border-radius: 15px;
     box-shadow: 0 0 0.2rem 0.4rem #00000083;
     font-size: 20pt;
@@ -402,6 +404,10 @@ h2 {
         min-width: 0;
         width: calc(13em/3);
         height: 75%;
+    }
+    .social-media-lista-item-link{
+        height: 80%;
+        width: 90%;
     }
 }
 
