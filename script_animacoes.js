@@ -83,3 +83,7 @@ function menu(){
     let menu = document.getElementById('menu')
     menu.classList.toggle('menu-estendido')
 }
+function fecharMenu(){
+    let fmenu = document.getElementById('menu')
+    fmenu.classList.remove('menu-estendido')
+}

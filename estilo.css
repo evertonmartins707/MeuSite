@@ -179,7 +179,6 @@ h2 {
     display: grid;
     height: 100%;
     max-height: 30em;
-    border: 6px solid #00ff00;
 }
 .informacoes-img img{width: 100%;}
 .informacoes-descricao{
@@ -206,6 +205,7 @@ h2 {
 .projetos-titulo{
     font-family: 'Righteous', sans-serif;
     margin: 8rem auto;
+    font-size: 40pt;
 }
 .projetos-front-end, .projetos-back-end{
     margin: 2em 0 2em 0;
