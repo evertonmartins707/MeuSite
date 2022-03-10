@@ -326,14 +326,17 @@ h2 {
     background:#2c2828;
     width: 70%;
     height: 70%;
+    color: #fff;
+    display: grid;
 }
 .fechar-modal-bnt{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
     width: 2rem;
     height: 2rem;
-    border-radius: 30px;
     margin: 1em;
+    cursor: pointer;
+    border-radius: 1rem;
 }
 .meus-certificados .card-bloco{
     width: 80%;
@@ -414,6 +417,10 @@ h2 {
     section{text-align: center;}
     .informacoes{flex-direction: column;}
     .informacoes-descricao{width: 95%;}
+    .informacoes-projetos{
+        width: 90%;
+        height: 90%;
+    }
 
     .card{width: 90%;}
     .rodape-conteudo{
