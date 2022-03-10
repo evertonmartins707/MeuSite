@@ -35,9 +35,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Righteous&family=Waterfall&display=swap" rel="stylesheet">
 
     <title>Everton Martins</title>
+    <script src="script_animacoes.js" defer></script>
+    <script src="modal.js" defer></script>
 </head>
 <body>
-    <script src="script_animacoes.js" defer></script>
     <div class="backToTop-bnt" id="bntBackToTop" onclick="backToTop()">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </div>
@@ -140,8 +141,15 @@
                         <p class="card-bloco-display-titulo">Projeto Galleria</p>
                     </div>
                     <div class="card-bloco-detalhes">
-                        <h5 class="detalhes-btn"><a>Saiba mais</a></h5>
+                        <h5 class="detalhes-btn" onclick="abrirModal('galleria')"><a>Saiba mais</a></h5>
                         <h5 class="detalhes-btn"><a href="https://projeto-galleria.netlify.app/" target="_blank">Acessar site</a></h5>
+                    </div>
+                </div>
+                <div id="informacoesgalleria" class="modal-exterior">
+                    <div class="modal-interior">
+                        <div class="informacoes-projetos">
+                            <button id='fecharModalgalleria' class="fechar-modal-bnt"><i class="fas fa-x"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,8 +160,15 @@
                         <p class="card-bloco-display-titulo">Josefina</p>
                     </div>
                     <div class="card-bloco-detalhes">
-                        <h5 class="detalhes-btn"><a>Saiba mais</a></h5>
+                        <h5 class="detalhes-btn" onclick="abrirModal('josefina')"><a>Saiba mais</a></h5>
                         <h5 class="detalhes-btn"><a href="https://josefina.netlify.app/" target="_blank">Acessar site</a></h5>
+                    </div>
+                </div>
+                <div id="informacoesjosefina" class="modal-exterior">
+                    <div class="modal-interior">
+                        <div class="informacoes-projetos">
+                            <button id='fecharModaljosefina' class="fechar-modal-bnt"><i class="fas fa-x"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
