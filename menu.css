@@ -6,6 +6,8 @@
     width: 50px;
     height: 50px;
     padding: 0 8px;
+    min-width: 50px;
+    min-height: 50px;
 }
 .menu-hamburguer-linha{
     display: block;
@@ -48,12 +50,13 @@
     .cabecalho-menu{
         position: absolute;
         top: 0px;
-        right: 0px;
+        right: 0;
         flex-direction: column;
         align-items: flex-end;
         gap: 14px;
         padding: 1em;
-        height: calc(100vh - 5em);
+        height: 9vh;
+        transition: 1s;
     }
     .menu-hamburguer{
         display: flex;
@@ -61,18 +64,19 @@
     }
     .cabecalho-menu-lista{
         align-items: flex-end;
-        justify-content: center;
-        flex-direction: column;
-        width: 0;
-        height: 13em;
-        transition: .5s;
+    justify-content: center;
+    flex-direction: column;
+    width: 0;
+    height: 13em;
+    position: relative;
+    right: -110%;
+    transition: .5s;
     }
     .cabecalho-menu-lista-li{
         display: unset;
     }
 }
 .menu-estendido{
-    transition: 1s;
     background: rgba(0, 0, 0, .6);
     height: 100vh;
 }
@@ -80,6 +84,7 @@
     padding: 20px;
     display: flex;
     width: 10em;
+    right: 0;
 }
 .menu-estendido .menu-hamburguer-linha{
     transform: rotateZ(45deg);
