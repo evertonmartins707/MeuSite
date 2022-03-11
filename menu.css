@@ -53,6 +53,7 @@
         align-items: flex-end;
         gap: 14px;
         padding: 1em;
+        height: 100vh;
     }
     .menu-hamburguer{
         display: flex;
