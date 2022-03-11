@@ -328,6 +328,7 @@ h2 {
     height: 70%;
     color: #fff;
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .fechar-modal-bnt{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -337,6 +338,38 @@ h2 {
     margin: 1em;
     cursor: pointer;
     border-radius: 1rem;
+}
+.informacoes-projetos-conteudo p::first-letter{margin-left: 10px}
+.informacoes-projetos-conteudo{
+    width: 100%;
+    margin: 10px;
+    grid-column: 1;
+    grid-row: 2;
+}
+.informacoes-projetos-frame iframe{ width: 425px; height: 90%;}
+.informacoes-projetos-frame{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+.informacoes-projetos-conteudo-bnt{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.informacoes-projetos-conteudo-bnt a{
+    margin: 0;
+    padding: 10px;
+    border-radius: 25px;
+    background: #16fd16;
+    color: #2c2828;
+    font-weight: 700;
+    transition: .5s;
+}
+.informacoes-projetos-conteudo-bnt a:hover{
+    background: #78fc78;
 }
 .meus-certificados .card-bloco{
     width: 80%;

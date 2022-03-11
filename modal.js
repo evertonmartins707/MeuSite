@@ -8,9 +8,12 @@ function abrirModal(projeto){
     ],{
         duration: 100,
     })
-
+    
     const fechar = document.getElementById(`fecharModal${projeto}`)
     fechar.addEventListener('click', function(){
+        infor.style.display = 'none'
+    })
+    infor.addEventListener('click', function(){
         infor.style.display = 'none'
     })
 }
