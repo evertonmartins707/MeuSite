@@ -341,16 +341,20 @@ h2 {
 }
 .informacoes-projetos-conteudo p::first-letter{margin-left: 10px}
 .informacoes-projetos-conteudo{
-    width: 100%;
     margin: 10px;
     grid-column: 1;
     grid-row: 2;
 }
-.informacoes-projetos-frame iframe{ width: 425px; height: 90%;}
+.informacoes-projetos-frame iframe{ 
+    max-width: 425px;
+    width: 99%;
+    height: 99%;
+}
 .informacoes-projetos-frame{
     display: grid;
     place-items: center;
     width: 100%;
+    height: 100%;
     grid-column: 2;
     grid-row: 1/3;
 }
@@ -451,6 +455,8 @@ h2 {
     .informacoes{flex-direction: column;}
     .informacoes-descricao{width: 95%;}
     .informacoes-projetos{
+        display:flex;
+        flex-direction: column;
         width: 90%;
         height: 90%;
     }
