@@ -467,6 +467,10 @@ section{padding: 100px 0; border-top: 1px solid;}
     }
 
     .card{width: 90%;}
+    .meus-certificados{
+        height: 40em;
+        overflow-y: scroll;
+    }
     .rodape-conteudo{
         grid-column: 1;
         grid-row: 2;
