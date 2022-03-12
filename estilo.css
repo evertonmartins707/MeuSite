@@ -35,9 +35,14 @@ h2 {
     color: var(--subtitle-color);
     font-size: 30pt;
     width: 100%;
-    margin-bottom: 1em;
     text-align: center;
 }
+.title-section{
+    font-family: 'Righteous', sans-serif;
+    font-size: 40pt;
+    text-transform: uppercase;
+}
+section{padding: 100px 0}
 .backToTop-bnt{
     position: fixed;
     bottom: 1em;
@@ -203,11 +208,6 @@ h2 {
 }
 .informacoes-descricao-tabela-curriculo:hover{background: transparent; color: #00FA9A;}
 
-.projetos-titulo{
-    font-family: 'Righteous', sans-serif;
-    margin: 8rem auto;
-    font-size: 40pt;
-}
 .projetos-front-end, .projetos-back-end{
     margin: 2em 0 2em 0;
     display: flex;
