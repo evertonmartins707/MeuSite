@@ -41,8 +41,9 @@ h2 {
     font-family: 'Righteous', sans-serif;
     font-size: 40pt;
     text-transform: uppercase;
+    margin-top: 1em;
 }
-section{padding: 100px 0}
+section{padding: 100px 0; border-top: 1px solid;}
 .backToTop-bnt{
     position: fixed;
     bottom: 1em;
