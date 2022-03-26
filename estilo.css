@@ -335,11 +335,17 @@ section{padding: 100px 0; border-top: 1px solid;}
 .fechar-modal-bnt{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
+    font-size: 13pt;
     width: 2rem;
     height: 2rem;
     margin: 1em;
     cursor: pointer;
     border-radius: 1rem;
+    background: transparent;
+    color:rgb(0, 255, 179);
+}
+.informacoes-projetos-conteudo h2{
+    color: #16fd16;
 }
 .informacoes-projetos-conteudo p::first-letter{margin-left: 10px}
 .informacoes-projetos-conteudo{
