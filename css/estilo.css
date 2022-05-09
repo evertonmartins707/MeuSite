@@ -134,7 +134,7 @@ section{padding: 100px 0; border-top: 1px solid;}
     transition: .5s;
 }
 .conteudo{
-    background-image: url(img/background-photo.png);
+    background-image: url(../img/background-photo.png);
     background-position: left center;
     background-size: cover;
     padding: 55px 10px 55px 10px;

@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="img/foto-everton.jpeg" type="image/x-icon" />
     
     <!-- Importação da folha de estilo -->
-    <link rel="stylesheet" href="estilo.css" type="text/css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <link rel="stylesheet" href="css/menu.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,8 +35,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Righteous&family=Waterfall&display=swap" rel="stylesheet">
 
     <title>Everton Martins</title>
-    <script src="script_animacoes.js" defer></script>
-    <script src="modal.js" defer></script>
+    <script src="js/script_animacoes.js" defer></script>
+    <script src="js/modal.js" defer></script>
 </head>
 <body>
     <div class="backToTop-bnt" id="bntBackToTop" onclick="backToTop()">
@@ -282,6 +282,39 @@
                             </div>
                             <div class="informacoes-projetos-frame">
                                 <iframe src="https://3532everton.github.io/Calculadora/" frameborder="0" ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-bloco">
+                    <div class="card-bloco-display">
+                        <img class="card-bloco-display-img" src="img/foto-mplay.png" alt="site 'mPlay'">
+                        <p class="card-bloco-display-titulo">mPlay</p>
+                    </div>
+                    <div class="card-bloco-detalhes">
+                        <h5 class="detalhes-btn" onclick="abrirModal('mPlay')"><a>Saiba mais</a></h5>
+                        <h5 class="detalhes-btn"><a href="https://3532everton.github.io/mPlay/" target="_blank">Acessar site</a></h5>
+                    </div>
+                </div>
+                <div id="informacoesmPlay" class="modal-exterior">
+                    <div class="modal-interior">
+                        <div class="informacoes-projetos">
+                            <button id='fecharModalmPlay' class="fechar-modal-bnt"><i class="fas fa-x"></i></button>
+                            <div class="informacoes-projetos-conteudo">
+                                <h2>Calculadora</h2>
+                                <p>
+                                    O mPlay é um site para que você possa tocar um pouco de piano a vontade. Contrui esse site para
+                                    treinar e praticar Java Script além de poder iniciar usando o bootstrap.
+                                </p>
+                                <div class="informacoes-projetos-conteudo-bnt">
+                                    <a href="https://3532everton.github.io/mPlay/" target="_blank">Acessar Site</a>
+                                    <a href="https://github.com/3532Everton/mPlay" target="_blank">Git Hub</a>
+                                </div>
+                            </div>
+                            <div class="informacoes-projetos-frame">
+                                <iframe src="https://3532everton.github.io/mPlay/" frameborder="0" ></iframe>
                             </div>
                         </div>
                     </div>
