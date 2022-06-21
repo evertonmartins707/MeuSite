@@ -1,7 +1,19 @@
 const html = document.getElementById('html')
 html.addEventListener('load', modohora())
 html.addEventListener('scroll', fixarNavBar())
-function mudaridade(){
+html.addEventListener('load', mudarIdade(), intervalo())
+
+function intervalo(){
+    const conteudoTextoAnimacao = document.getElementById("conteudo-figura-animacao-texto")
+    setInterval(() => {
+        if (conteudoTextoAnimacao.offsetWidth < 3){
+            console.log(conteudoTextoAnimacao.offsetWidth)
+        }
+    }, 2000)
+    
+}
+
+function mudarIdade(){
     const idade = document.getElementById('idade')
     let data = new Date()
     let ano = data.getFullYear()
@@ -9,7 +21,7 @@ function mudaridade(){
     
     idade.innerHTML = ": " + idadeAtual
 }
-html.addEventListener('load', mudaridade())
+
 
 function modo_dark(){
     html.classList.toggle('dark-mode')

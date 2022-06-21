@@ -174,6 +174,7 @@ section{padding: 100px 0; border-top: 1px solid;}
     border-right: 0.15rem solid #00FA9A;
     white-space: nowrap;
     letter-spacing: .15rem;
+    width: 100%;
     animation: efeito-escrevendo 4s steps(30, end) alternate infinite, blink-animation .5s step-end infinite;
 }
 .informacoes{

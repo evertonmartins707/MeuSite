@@ -19,7 +19,7 @@
 }
 @keyframes efeito-escrevendo {
     from { width: 0;}
-    25% { width: 0;}
+    5% { width: 0;}
     75% { width: 100%;}
     to{ width: 100%;}
 }
