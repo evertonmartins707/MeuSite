@@ -1,4 +1,5 @@
 @import url(animations.css);
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 *{
     font-family: 'Comfortaa', cursive;
     margin: 0 auto;
@@ -31,6 +32,10 @@ html{
     --detalhes-color: #fff;
     --text-detalhes-color: #00Fa9a;
 }
+.cabecalho-titulo, .title-section {
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 4px;
+}
 h2 {
     color: var(--subtitle-color);
     font-size: 30pt;
@@ -38,7 +43,6 @@ h2 {
     text-align: center;
 }
 .title-section{
-    font-family: 'Righteous', sans-serif;
     font-size: 40pt;
     text-transform: uppercase;
     margin-top: 1em;
@@ -74,7 +78,6 @@ section{padding: 100px 0; border-top: 1px solid;}
 .header-top-fixed{animation: headerDown 1s;}
 .cabecalho-titulo{
     color:#00FA9A;
-    font-family: 'Righteous', cursive;
     margin: 0;
 }
 .cabecalho-menu, .cabecalho-menu-lista {

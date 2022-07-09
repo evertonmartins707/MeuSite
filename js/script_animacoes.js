@@ -1,17 +1,27 @@
 const html = document.getElementById('html')
+var cont = true
 html.addEventListener('load', modohora())
 html.addEventListener('scroll', fixarNavBar())
 html.addEventListener('load', mudarIdade(), intervalo())
 
-function intervalo(){
-    const conteudoTextoAnimacao = document.getElementById("conteudo-figura-animacao-texto")
-    setInterval(() => {
-        if (conteudoTextoAnimacao.offsetWidth < 3){
-            console.log(conteudoTextoAnimacao.offsetWidth)
-        }
-    }, 2000)
+// function intervalo(){
+//     const conteudoTextoAnimacao = document.getElementById("conteudo-figura-animacao-texto")
+//     setInterval(() => {
+//         if (conteudoTextoAnimacao.offsetWidth < 12){
+//             console.log('oi')
+//             if(cont){
+//                 conteudoTextoAnimacao.innerText = 'Programador Front-end júnior'
+//                 cont = false
+//             } else {
+//                 conteudoTextoAnimacao.innerText = 'Um designer'
+//                 cont = true
+//                 console.log(cont)
+//             }
+//         }
+//         console.log(conteudoTextoAnimacao.offsetWidth)
+//     }, 8000)
     
-}
+// }
 
 function mudarIdade(){
     const idade = document.getElementById('idade')
