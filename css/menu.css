@@ -52,10 +52,12 @@
         top: 0px;
         right: 0;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        align-self: stretch;
         gap: 14px;
         padding: 1em;
-        height: 9vh;
+        height: 5rem;
+        width: 5rem;
         transition: 1s;
     }
     .menu-hamburguer{
@@ -79,6 +81,8 @@
 .menu-estendido{
     background: rgba(0, 0, 0, .6);
     height: 100vh;
+    width: 50vw;
+    align-items: flex-end;
 }
 .menu-estendido .cabecalho-menu-lista{
     padding: 20px;

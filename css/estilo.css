@@ -79,6 +79,7 @@ section{padding: 100px 0; border-top: 1px solid;}
 .cabecalho-titulo{
     color:#00FA9A;
     margin: 0;
+    font-size: clamp(1rem, 6vw, 2rem);
 }
 .cabecalho-menu, .cabecalho-menu-lista {
     margin: 0;
@@ -199,7 +200,7 @@ section{padding: 100px 0; border-top: 1px solid;}
 .informacoes-descricao h3 strong{color: #00FA9A;}
 .informacoes-descricao h3, p, blockquote {padding: 1em 0;}
 .informacoes-descricao-tabela{width: 100%;}
-.informacoes-descricao-tabela-titulo, .informacoes-descricao-tabela-conteudo{height: 3em;}
+.informacoes-descricao-tabela-titulo, .informacoes-descricao-tabela-conteudo{height: 3em; font-size: clamp(9pt, 2vw, 128px);}
 .informacoes-descricao-tabela-curriculo{
     color: #fff;
     border: 1px solid #00c076;
