@@ -2,7 +2,8 @@ const html = document.getElementById('html')
 var cont = true
 html.addEventListener('load', modohora())
 html.addEventListener('scroll', fixarNavBar())
-html.addEventListener('load', mudarIdade(), intervalo())
+html.addEventListener('load', mudarIdade())
+// html.addEventListener('load', mudarIdade(), intervalo())
 
 // function intervalo(){
 //     const conteudoTextoAnimacao = document.getElementById("conteudo-figura-animacao-texto")
