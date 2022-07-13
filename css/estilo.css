@@ -121,19 +121,19 @@ section{padding: 100px 0; border-top: 1px solid;}
 }
 #button-dark-mode i{
     margin: 0;
-    font-size: 15pt;
+    font-size: 18px;
     transition: .5s;
 }
 .modo-dark .bloco-button i{
-    transform: translateX(35px);
+    transform: translateX(18px);
     transition: .5s;
 }
 .bloco-button{
     display: flex;
     align-items: center;
     border-radius: 20px;
-    width: 100%;
-    height: 60%;
+    width: 39px;
+    height: 24px;
     background-color: white;
     transition: .5s;
 }
