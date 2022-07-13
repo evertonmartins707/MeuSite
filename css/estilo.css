@@ -43,7 +43,7 @@ h2 {
     text-align: center;
 }
 .title-section{
-    font-size: 40pt;
+    font-size: clamp(1rem, 10vw, 40pt);
     text-transform: uppercase;
     margin-top: 1em;
 }
